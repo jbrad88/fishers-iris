@@ -7,8 +7,12 @@ f = open('iris.csv')
 csv_f = csv.reader(f)
 
 for row in csv_f:
-    x = (row[0])
-    print(x)
+    sepal_length = (row[0])
+    sepal_width = (row[1])
+    petal_length = (row[2])
+    petal_width = (row[3])
+    variety = (row[4])
+   
 
 
 
