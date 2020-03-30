@@ -1,8 +1,9 @@
 # Jody Bradley
 
-f=open("iris.txt", "r")
-if f.mode == 'r':
-    contents = f.read()
-    print(contents)
+import pandas as pd 
 
+data = pd.read_csv("iris.csv")
 
+x = data.head()
+
+print(x)
