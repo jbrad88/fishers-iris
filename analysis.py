@@ -16,8 +16,9 @@ summary = data.describe()
 # np.savetxt(r'Iris-data.txt', summary.values, fmt='%d')
 # Saves summary to text file Iris-data.txt. However, there are no headings [4].
 
-summary.to_csv(r'Iris-data.txt', index = False)
-# Saves summary to CSV file. Headings are included, however, descriptions (mean etc) are not.#
+summary.to_csv(r'Iris-data.txt')
+# Saves summary to CSV file. Headings and indices now included.
+
 
 
 
