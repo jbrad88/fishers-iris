@@ -10,14 +10,19 @@ data = pd.read_csv('iris.csv')
 
 summary = data.describe()
 
-file1 = open(r"Iris-data.txt", "a")
+# file1 = open(r"Iris-data.txt", "a")
 # Creates and opens a text file titled Iris-data.txt [3]
 
-np.savetxt(r'Iris-data.txt', summary.values, fmt='%d')
-# Saves summary to text file Iris-data.txt [4]
+# np.savetxt(r'Iris-data.txt', summary.values, fmt='%d')
+# Saves summary to text file Iris-data.txt. However, there are no headings [4].
+
+summary.to_csv(r'Iris-data.txt', index = False)
+# Saves summary to CSV file. Headings are included, however, descriptions (mean etc) are not.#
 
 
-file1.close()
+
+
+# file1.close()
 # Closes text file Iris-data.txt
 
 
