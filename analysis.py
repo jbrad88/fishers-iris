@@ -23,15 +23,35 @@ file1 = open(r"Iris-data.csv", 'a')
 summary.to_csv(r'Iris-data.csv')
 # Saves summary to a CSV file[5]
 
-plt.plot(df['sepal_length'], df['sepal_width'], 'bo') 
-plt.title("sepal length vs sepal width")
-plt.show()
+plt.hist(df["sepal_length"])
+plt.savefig("sepal_length.png")
+plt.clf()
+# Saves histrogram for Sepal Length as PNG
+
+plt.hist(df["sepal_width"])
+plt.savefig("sepal_width.png")
+plt.clf()
+# Saves histrogram for Sepal width as PNG
+
+plt.hist(df["petal_length"])
+plt.savefig("petal_length.png")
+plt.clf()
+# Saves histrogram for petal length as PNG
+
+plt.hist(df["petal_width"])
+plt.savefig("petal_width.png")
+plt.clf()
+# Saves histrogram for petal width as PNG
+
+#plt.plot(df['sepal_length'], df['sepal_width'], 'bo') 
+#plt.title("sepal length vs sepal width")
+#plt.show()
 
 #plt.savefig("scatter.png")
 #plt.clf()
 
 #df.hist(figsize=(10,5))
-#plt.show()
+
 
 file1.close()
 # Closes CSV file.
