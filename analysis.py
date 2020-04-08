@@ -50,11 +50,15 @@ plt.clf()
 
 plt.plot(df["sepal_length"], df["sepal_width"], 'b,') 
 plt.title("Sepal Length vs Sepal Width")
+plt.xlabel("Sepal Length")
+plt.ylabel("Sepal Width")
 plt.savefig("sepal_scatter.png")
 plt.clf()
 
 plt.plot(df["petal_length"], df["petal_width"], 'b,') 
 plt.title("Petal Length vs Petal Width")
+plt.xlabel("Petal Length")
+plt.ylabel("Petal Width")
 plt.savefig("petal_scatter.png")
 plt.clf()
 
