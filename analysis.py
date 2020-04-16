@@ -15,6 +15,7 @@ import seaborn as sns
 
 df = pd.read_csv('iris.csv')
 # Loads data from the CSV file 'iris.csv' into pandas dataframe.
+col=['sepal_length','sepal_width','petal_length','petal_width','species']
 
 x = 2
 if x == 2: 
@@ -39,27 +40,27 @@ summary.to_csv(r'Iris-data.csv')
 
 print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
 
-# This next part of the program will save a histrogram as a PNG for each of the four variables.
-plt.hist(df["sepal_length"])
-plt.title("Sepal Length")
-plt.savefig("sepal_length.png")
-plt.clf()
-# Saves histrogram for Sepal Length as PNG
+iris_setosa=df.loc[df["species"]=="Iris-setosa"]
+iris_virginica=df.loc[df["species"]=="Iris-virginica"]
+iris_versicolor=df.loc[df["species"]=="Iris-versicolor"]
 
-plt.hist(df["sepal_width"])
-plt.savefig("sepal_width.png")
-plt.clf()
-# Saves histrogram for Sepal width as PNG
-
-plt.hist(df["petal_length"])
+# This next part of the program will save a histrogram as a PNG for each of the four variables [8].
+sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"petal_length").add_legend()
 plt.savefig("petal_length.png")
 plt.clf()
-# Saves histrogram for petal length as PNG
 
-plt.hist(df["petal_width"])
+sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"petal_width").add_legend()
 plt.savefig("petal_width.png")
 plt.clf()
-# Saves histrogram for petal width as PNG
+
+sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"sepal_length").add_legend()
+plt.savefig("sepal_length.png")
+plt.clf()
+
+sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"sepal_width").add_legend()
+plt.savefig("sepal_width.png")
+plt.clf()
+
 
 # This next part of the program will save a scatter plot of each pair of variables: (i) sepal length to sepal width;
 # and (ii) petal length to petal width [7].
@@ -95,5 +96,6 @@ file1.close()
 # 5. https://datatofish.com/export-dataframe-to-csv/
 # 6. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
 # 7. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
+# 8. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
 
 
