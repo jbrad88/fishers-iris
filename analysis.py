@@ -12,7 +12,6 @@ import seaborn as sns
 # This will give the user the mean, the standard variation, the minimum, the maximum of each of the four attributes
 # (sepal length, sepal width, petal length and petal width).
 
-
 df = pd.read_csv('iris.csv')
 # Loads data from the CSV file 'iris.csv' into pandas dataframe.
 col=['sepal_length','sepal_width','petal_length','petal_width','species']
@@ -39,6 +38,7 @@ summary.to_csv(r'Iris-data.csv')
 # Saves summary to a CSV file[5]
 
 print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
+print(" ")
 
 iris_setosa=df.loc[df["species"]=="Iris-setosa"]
 iris_virginica=df.loc[df["species"]=="Iris-virginica"]
@@ -67,12 +67,19 @@ sns.pairplot(df,hue="species",height=3)
 plt.savefig("pairplot.png")
 plt.clf()
 
+print("Please refer to the program folder for the following files which have now been created:")
+print("  - petal_length.png")
+print("  - petal_width.png")
+print("  - sepal_length.png")
+print("  - sepal_width.png")
+print("  - pairplot.png")
+
+print(" ")
+print("Thank you for using this program")
+
+
 file1.close()
 # Closes CSV file.
-
-
-
-
 
 
 # REFERENCES
@@ -84,5 +91,7 @@ file1.close()
 # 6. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
 # 7. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
 # 8. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+# 9. https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+
 
 
