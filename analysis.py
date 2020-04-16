@@ -61,24 +61,11 @@ sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"sepal_width").add_leg
 plt.savefig("sepal_width.png")
 plt.clf()
 
-
-# This next part of the program will save a scatter plot of each pair of variables: (i) sepal length to sepal width;
-# and (ii) petal length to petal width [7].
-
-plt.plot(df["sepal_length"], df["sepal_width"], 'b,') 
-plt.title("Sepal Length vs Sepal Width")
-plt.xlabel("Sepal Length")
-plt.ylabel("Sepal Width")
-plt.savefig("sepal_scatter.png")
+# This final part of the program produces a matrix of relationships between each pair of variables.
+sns.set_style("whitegrid")
+sns.pairplot(df,hue="species",height=3)
+plt.savefig("pairplot.png")
 plt.clf()
-
-plt.plot(df["petal_length"], df["petal_width"], 'b,') 
-plt.title("Petal Length vs Petal Width")
-plt.xlabel("Petal Length")
-plt.ylabel("Petal Width")
-plt.savefig("petal_scatter.png")
-plt.clf()
-
 
 file1.close()
 # Closes CSV file.
