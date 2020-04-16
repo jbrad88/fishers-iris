@@ -12,8 +12,22 @@ import seaborn as sns
 # This will give the user the mean, the standard variation, the minimum, the maximum of each of the four attributes
 # (sepal length, sepal width, petal length and petal width).
 
+
 df = pd.read_csv('iris.csv')
-# Loans data from the CSV file 'iris.csv' into pandas dataframe.
+# Loads data from the CSV file 'iris.csv' into pandas dataframe.
+
+x = 2
+if x == 2: 
+    print(" ")
+    print("This program provides an analysis of the well-known Fisher's Iris data set.")
+    print(" ")
+    print("The first five rows of the sample gives an overview of the variables:")
+    print(df.head())
+    print(" ")
+    print("Below is a summary of each variable:") 
+    print(" ")
+    print(df.describe())
+    print(" ")
 
 summary = df.describe()
 
@@ -22,6 +36,8 @@ file1 = open(r"Iris-data.csv", 'a')
 
 summary.to_csv(r'Iris-data.csv')
 # Saves summary to a CSV file[5]
+
+print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
 
 # This next part of the program will save a histrogram as a PNG for each of the four variables.
 plt.hist(df["sepal_length"])
@@ -46,7 +62,7 @@ plt.clf()
 # Saves histrogram for petal width as PNG
 
 # This next part of the program will save a scatter plot of each pair of variables: (i) sepal length to sepal width;
-# and (ii) petal length to petal width.
+# and (ii) petal length to petal width [7].
 
 plt.plot(df["sepal_length"], df["sepal_width"], 'b,') 
 plt.title("Sepal Length vs Sepal Width")
@@ -78,5 +94,6 @@ file1.close()
 # 4. https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
 # 5. https://datatofish.com/export-dataframe-to-csv/
 # 6. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
+# 7. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
 
 
