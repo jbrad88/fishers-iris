@@ -29,18 +29,18 @@ Before you continue, make sure that you have met the following requirements:
 - NumPy
 - Matplotlib: Python plotting 
 
-## Installation
-
-
 ## Findings 
 
 ### Histograms
 * A histrogram is a graphical display of data using bars of different heights, representing the number of samples in a given range.
-* While sepal length and sepal width are uniformly distributed, petal length and petal width are not.
+* Running the analysis.py program creates 4 histograms, showing the distribution of the variables of the data set.
+* The Iris Setosa species is easily identified from the other two species by its petal length.
+* All three species overlap in their sepal length and sepal width attributes.
 
 ## Scatter Plots
 * Scatter plots show the relationship between two data sets, i.e. their correlation.
-* While there is a correlation between sepal length and sepal width, there is a strong correlation between petal length and petal width.
+* Running the analysis.py program creates a file "pairplot.png" which shows a matrix of the relationships between each variable.
+* There is a strong correlation between petal length and petal width.
 
 
 
@@ -53,4 +53,6 @@ Before you continue, make sure that you have met the following requirements:
 #References
 [1] UC Irvine Machine Learning Repository. Iris data set.
 https://archive.ics.uci.edu/ml/datasets/Iris
+[2] https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+
 

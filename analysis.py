@@ -2,6 +2,7 @@
 # This program....
 
 # Import the libraries which we will be using [1]:
+import csv
 import pandas as pd
 from pandas import read_csv
 import numpy as np
@@ -44,6 +45,7 @@ with open(txt_file, "w") as my_output_file:
     with open(csv_file, "r") as my_input_file:
         [ my_output_file.write(",".join(row)+'\n') for row in csv.reader(my_input_file)]
     my_output_file.close()
+#This saves the CSV to .txt format. Not sure if this is necessary? TBC
 
 print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
 print(" ")
