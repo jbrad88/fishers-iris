@@ -7,9 +7,9 @@
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
 * [Technologies](#technologies)
-* [General Usage Information](#general usage information)
+* [General Usage Information](#general_usage_information)
 * [Findings](#findings)
-* References](#references)
+* [References](#references)
 
 
 
