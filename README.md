@@ -5,7 +5,12 @@
 
 ## Table of contents
 * [Introduction](#introduction)
+* [Prerequisites](#prerequisites)
 * [Technologies](#technologies)
+* [General Usage Information](#general usage information)
+* [Findings](#findings)
+* References](#references)
+
 
 
 ## Introduction
