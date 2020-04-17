@@ -29,6 +29,23 @@ Before you continue, make sure that you have met the following requirements:
 - NumPy
 - Matplotlib: Python plotting 
 
+## General Usage Information
+1. Download ZIP package and unzip it.
+2. On a new command line, navigate to the directory containing the (now unzipped) downloaded folder.
+3. Run the "analysis program" by simply typing "python" followed by the file name, i.e. python analysis.py
+4. When the program has been succesfully run, it will create the following files:
+
+### Summary of the data set saved as "Iris-data.csv"
+
+This file provides a summary of the data set using the "describe()" function, giving the user the "count" (the number of samles), the "mean" (average value), the "std" (standard deviation), the "min" (minimum value), the "max" (maximum value), and the lower (25%), upper (75%) and the middle (50%) percentile.
+
+### Four histograms saved as: "petal_length.png", "petal_width.png", "sepal_length.png" and "sepal_width.png"
+
+and
+
+### "Pairplot.png" showing a matrix of the relationships between each variable. 
+
+
 ## Findings 
 
 ### Histograms
@@ -50,9 +67,14 @@ Before you continue, make sure that you have met the following requirements:
 
 
 
-#References
-[1] UC Irvine Machine Learning Repository. Iris data set.
-https://archive.ics.uci.edu/ml/datasets/Iris
-[2] https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
-
-
+# REFERENCES
+1. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+2. https://www.datacamp.com/community/tutorials/pandas-read-csv
+3. https://www.geeksforgeeks.org/reading-writing-text-files-python/
+4. https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
+5. https://datatofish.com/export-dataframe-to-csv/
+6. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
+7. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
+8. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+9. https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+10. https://github.com/adobe-type-tools/python-scripts/blob/master/README.md

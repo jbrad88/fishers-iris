@@ -38,18 +38,10 @@ file1 = open(r"Iris-data.csv", 'a')
 summary.to_csv(r'Iris-data.csv')
 # Saves summary to a CSV file[5]
 
-import csv
-csv_file = ('Iris-data.csv')
-txt_file = ('Iris-data.txt')
-with open(txt_file, "w") as my_output_file:
-    with open(csv_file, "r") as my_input_file:
-        [ my_output_file.write(",".join(row)+'\n') for row in csv.reader(my_input_file)]
-    my_output_file.close()
-#This saves the CSV to .txt format. Not sure if this is necessary? TBC
-
 print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
 print(" ")
 
+# Divide the data set into the three species:
 iris_setosa=df.loc[df["species"]=="Iris-setosa"]
 iris_virginica=df.loc[df["species"]=="Iris-virginica"]
 iris_versicolor=df.loc[df["species"]=="Iris-versicolor"]
