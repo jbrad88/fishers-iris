@@ -44,6 +44,7 @@ Before you continue, make sure that you have met the following requirements:
 2. On a new command line, navigate to the directory containing the (now unzipped) downloaded folder.
 3. Run the "analysis program" by simply typing "python" followed by the file name, i.e. python analysis.py
 4. When the program has run you will see an overview of the data set, showing the three species of Iris included in the data set, the first ten rows of the sample, giving the user a taste of the data which we will be looking at, and a summery of each variable.
+
 ![Fig1](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig1.JPG?raw=true)
 
 5. Running the program will also create the following files:
