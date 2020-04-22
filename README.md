@@ -17,7 +17,13 @@ The Iris flower data set (also known as Fisher's Iris data set) is a well known 
 
 The data set consists of 3 classes of 50 samples each (i.e. 150 samples in total), where each class refers to each of the three species of Irish (Iris setosa, Iris virginica and Iris versicolor). Four attributes were measured from each of the 150 samples: (i) the sepal length in cm; (ii) the sepal width in cm; (iii) the petal length in cm; and (iv) the petal width in cm.
 
+<<<<<<< HEAD
 The Iris Flower Data Set is widely used as a test case for machine learning. New types of sorting models and taxonomy algorithms often use the Iris flower data set as an input, to examine how various technologies sort and handle data sets [2].
+=======
+![fig1](https://miro.medium.com/max/362/1*XN85Vu-SmkJc3TkwgTx5Kw.jpeg)
+
+The Iris Flower Data Set is widely used as a test case for machine learning. 
+>>>>>>> 956632d2a09b5033333c4f19efc4e6bab51ef1f5
 
 This program inputs the Iris flower data set and outputs a histrogram for each of the four variables (saved as png files) and a scatter plots of each pair of variables (i.e. sepal width v sepal length, and petal width v petal length).
 
