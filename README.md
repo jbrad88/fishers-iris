@@ -23,7 +23,6 @@ The Iris Flower Data Set is widely used as a test case for machine learning. New
 
 The Iris Flower Data Set is widely used as a test case for machine learning. 
 
-
 This program inputs the Iris flower data set and outputs a histrogram for each of the four variables (saved as png files) and a scatter plots of each pair of variables (i.e. sepal width v sepal length, and petal width v petal length).
 
 ## Prerequisites
@@ -57,6 +56,7 @@ and
 
 -> "Pairplot.png" showing a matrix of the relationships between each variable. 
 
+![Fig2](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig2.JPG)
 
 ## Findings 
 
