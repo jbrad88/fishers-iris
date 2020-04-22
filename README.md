@@ -44,11 +44,11 @@ Before you continue, make sure that you have met the following requirements:
 
 This file provides a summary of the data set using the "describe()" function, giving the user the "count" (the number of samles), the "mean" (average value), the "std" (standard deviation), the "min" (minimum value), the "max" (maximum value), and the lower (25%), upper (75%) and the middle (50%) percentile.
 
-### Four histograms saved as: "petal_length.png", "petal_width.png", "sepal_length.png" and "sepal_width.png"
+-> Four histograms saved as: "petal_length.png", "petal_width.png", "sepal_length.png" and "sepal_width.png"
 
 and
 
-### "Pairplot.png" showing a matrix of the relationships between each variable. 
+-> "Pairplot.png" showing a matrix of the relationships between each variable. 
 
 
 ## Findings 

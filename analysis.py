@@ -17,18 +17,21 @@ df = pd.read_csv('iris.csv')
 # Loads data from the CSV file 'iris.csv' into pandas dataframe.
 col=['sepal_length','sepal_width','petal_length','petal_width','species']
 
-x = 2
-if x == 2: 
-    print(" ")
-    print("This program provides an analysis of the well-known Fisher's Iris data set.")
-    print(" ")
-    print("The first five rows of the sample gives an overview of the variables:")
-    print(df.head())
-    print(" ")
-    print("Below is a summary of each variable:") 
-    print(" ")
-    print(df.describe())
-    print(" ")
+
+print(" ")
+print("This program provides an analysis of the well-known Fisher's Iris data set.")
+print(" ")
+print("There are three species of Iris included in this data set, as follows:")
+print(df.groupby('species').size())
+print(" ")
+print("The first ten rows of the sample gives an overview of the variables:")
+print(" ")
+print(df.head(n=11))
+print(" ")
+print("Below is a summary of each variable:") 
+print(" ")
+print(df.describe())
+print(" ")
 
 summary = df.describe()
 
