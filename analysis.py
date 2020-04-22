@@ -1,7 +1,6 @@
 # Jody Bradley
-# This program....
 
-# Import the libraries which we will be using [1]:
+# Import the libraries which we will be using [3] [8]:
 import csv
 import pandas as pd
 from pandas import read_csv
@@ -14,9 +13,8 @@ import seaborn as sns
 # (sepal length, sepal width, petal length and petal width).
 
 df = pd.read_csv('iris.csv')
-# Loads data from the CSV file 'iris.csv' into pandas dataframe.
+# Loads data from the CSV file 'iris.csv' into pandas dataframe [4].
 col=['sepal_length','sepal_width','petal_length','petal_width','species']
-
 
 print(" ")
 print("This program provides an analysis of the well-known Fisher's Iris data set.")
@@ -36,20 +34,20 @@ print(" ")
 summary = df.describe()
 
 file1 = open(r"Iris-data.csv", 'a')
-# Creates and opens a CSV file titled Iris-data [3]
+# Creates and opens a CSV file titled Iris-data [5] [6].
 
 summary.to_csv(r'Iris-data.csv')
-# Saves summary to a CSV file[5]
+# Saves summary to a CSV file[7]
 
 print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
 print(" ")
 
-# Divide the data set into the three species:
+# Divide the data set into the three species [8]:
 iris_setosa=df.loc[df["species"]=="Iris-setosa"]
 iris_virginica=df.loc[df["species"]=="Iris-virginica"]
 iris_versicolor=df.loc[df["species"]=="Iris-versicolor"]
 
-# This next part of the program will save a histrogram as a PNG for each of the four variables [8].
+# This next part of the program will save a histrogram as a PNG for each of the four variables [9].
 sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"petal_length").add_legend()
 plt.savefig("petal_length.png")
 plt.clf()
@@ -66,7 +64,7 @@ sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"sepal_width").add_leg
 plt.savefig("sepal_width.png")
 plt.clf()
 
-# This final part of the program produces a matrix of relationships between each pair of variables.
+# This final part of the program produces a matrix of relationships between each pair of variables [9].
 sns.set_style("whitegrid")
 sns.pairplot(df,hue="species",height=3)
 plt.savefig("pairplot.png")
@@ -82,21 +80,22 @@ print("  - pairplot.png")
 print(" ")
 print("Thank you for using this program")
 
-
 file1.close()
 # Closes CSV file.
 
 
 # REFERENCES
-# 1. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
-# 2. https://www.datacamp.com/community/tutorials/pandas-read-csv
-# 3. https://www.geeksforgeeks.org/reading-writing-text-files-python/
-# 4. https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
-# 5. https://datatofish.com/export-dataframe-to-csv/
-# 6. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
-# 7. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
-# 8. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
-# 9. https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+#1. http://archive.ics.uci.edu/ml/datasets/iris
+#2. https://www.techopedia.com/definition/32880/iris-flower-data-set
+#3. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+#4. https://www.datacamp.com/community/tutorials/pandas-read-csv
+#5. https://www.geeksforgeeks.org/reading-writing-text-files-python/
+#6. https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
+#7. https://datatofish.com/export-dataframe-to-csv/
+#8. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
+#9. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+#10. https://github.com/adobe-type-tools/python-scripts/blob/master/README.md
+
 
 
 
