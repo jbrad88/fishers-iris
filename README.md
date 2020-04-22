@@ -40,7 +40,7 @@ Before you continue, make sure that you have met the following requirements:
 - Matplotlib: Python plotting 
 
 ## General Usage Information
-1. Download ZIP package and unzip it.
+1. Download ZIP package and unzip it. The unzipped folder should include the analysis.py python program and the iris.csv data set.
 2. On a new command line, navigate to the directory containing the (now unzipped) downloaded folder.
 3. Run the "analysis program" by simply typing "python" followed by the file name, i.e. python analysis.py
 4. When the program has run you will see an overview of the data set, showing the three species of Iris included in the data set, the first ten rows of the sample, giving the user a taste of the data which we will be looking at, and a summery of each variable.
@@ -58,7 +58,7 @@ and
 ## Findings 
 
 ### Summary
-*This file provides a summary of the data set using the "describe()" function, giving the user the "count" (the number of samles), the "mean" (average value), the "std" (standard deviation), the "min" (minimum value), the "max" (maximum value), and the lower (25%), upper (75%) and the middle (50%) percentile. Using this table for example, we can see that the maximum sepal length is 7.9cm, while the minimum sepal length is 4.3cm. The average (mean) sepal width is 5.843cm. 
+* This file provides a summary of the data set using the "describe()" function, giving the user the "count" (the number of samles), the "mean" (average value), the "std" (standard deviation), the "min" (minimum value), the "max" (maximum value), and the lower (25%), upper (75%) and the middle (50%) percentile. Using this table for example, we can see that the maximum sepal length is 7.9cm, while the minimum sepal length is 4.3cm. The average (mean) sepal width is 5.843cm. 
 
 ### Histograms
 * A histrogram is a graphical display of data using bars of different heights, representing the number of samples in a given range.

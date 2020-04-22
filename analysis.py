@@ -4,7 +4,6 @@
 import csv
 import pandas as pd
 from pandas import read_csv
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -95,7 +94,4 @@ file1.close()
 #8. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
 #9. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
 #10. https://github.com/adobe-type-tools/python-scripts/blob/master/README.md
-
-
-
 
