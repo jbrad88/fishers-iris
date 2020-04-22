@@ -15,9 +15,14 @@
 
 ## Introduction
 
-The Iris flower data set (also known as Fisher's Iris data set) is a well known multivariate data set. It was introduced by Ronald Fisher (a British statistician and geneticist)in 1936, in his paper titled "The use of multiple measurements in taxonomic problems". 
+The Iris flower data set (also known as Fisher's Iris data set) is a well known multivariate data set. It was introduced by Ronald Fisher (a British statistician and geneticist)in 1936, in his paper titled "The use of multiple measurements in taxonomic problems". This dataset can be accessed on the UCI Machhine Learning Repository [1].
 
-The data set consists of 3 classes of 50 samples each (i.e. 150 samples in total), where each class refers to each of the three species of Irish (Iris setosa, Iris virginica and Iris versicolor). Four attributes were measured from each of the 150 samples: (i) the sepal length in cm; (ii) the sepal width in cm; (iii) the petal length in cm; and (iv) the petal width in cm [1].
+The data set consists of 3 classes of 50 samples each (i.e. 150 samples in total), where each class refers to each of the three species of Irish (Iris setosa, Iris virginica and Iris versicolor). Four attributes were measured from each of the 150 samples: (i) the sepal length in cm; (ii) the sepal width in cm; (iii) the petal length in cm; and (iv) the petal width in cm.
+
+ 
+
+
+The Iris Flower Data Set is widely used as a test case for machine learning. 
 
 This program inputs the Iris flower data set and outputs a histrogram for each of the four variables (saved as png files) and a scatter plots of each pair of variables (i.e. sepal width v sepal length, and petal width v petal length).
 
@@ -73,13 +78,14 @@ and
 
 
 # REFERENCES
-1. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
-2. https://www.datacamp.com/community/tutorials/pandas-read-csv
-3. https://www.geeksforgeeks.org/reading-writing-text-files-python/
-4. https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
-5. https://datatofish.com/export-dataframe-to-csv/
-6. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
-7. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
-8. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
-9. https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
-10. https://github.com/adobe-type-tools/python-scripts/blob/master/README.md
+1. http://archive.ics.uci.edu/ml/datasets/iris
+2. https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+3. https://www.datacamp.com/community/tutorials/pandas-read-csv
+4. https://www.geeksforgeeks.org/reading-writing-text-files-python/
+5. https://stackoverflow.com/questions/31247198/python-pandas-write-content-of-dataframe-into-text-file
+6. https://datatofish.com/export-dataframe-to-csv/
+7. https://www.kaggle.com/gopaltirupur/iris-data-analysis-and-machine-learning-python
+8. https://stackoverflow.com/questions/12444716/how-do-i-set-the-figure-title-and-axes-labels-font-size-in-matplotlib
+9. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
+10. https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+11. https://github.com/adobe-type-tools/python-scripts/blob/master/README.md
