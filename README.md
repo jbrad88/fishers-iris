@@ -63,6 +63,8 @@ and
 ### Summary
 * This file provides a summary of the data set using the "describe()" function, giving the user the "count" (the number of samles), the "mean" (average value), the "std" (standard deviation), the "min" (minimum value), the "max" (maximum value), and the lower (25%), upper (75%) and the middle (50%) percentile. Using this table for example, we can see that the maximum sepal length is 7.9cm, while the minimum sepal length is 4.3cm. The average (mean) sepal width is 5.843cm. 
 
+![Fig3](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig3.JPG)
+
 ### Histograms
 * A histrogram is a graphical display of data using bars of different heights, representing the number of samples in a given range.
 * Running the analysis.py program creates 4 histograms, showing the distribution of the variables of the data set.
@@ -73,6 +75,8 @@ and
 * Scatter plots show the relationship between two data sets, i.e. their correlation.
 * Running the analysis.py program creates a file "pairplot.png" which shows a matrix of the relationships between each variable.
 * There is a strong correlation between petal length and petal width.
+
+![Fig4](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig4.JPG)
 
 
 
