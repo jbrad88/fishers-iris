@@ -1,7 +1,6 @@
-# fishers-iris
-# Programming and Scripting Project 2020
+# GMIT H.Dip in Data Analystics - Programming and Scripting Project 2020
 
-# Iris flower data set
+# Researching and investigating the Iris flower data set using Python.
 
 ## Table of contents
 * [Introduction](#introduction)
@@ -13,17 +12,15 @@
 
 ## Introduction
 
-The Iris flower data set (also known as Fisher's Iris data set) is a well known multivariate data set. It was introduced by Ronald Fisher (a British statistician and geneticist)in 1936, in his paper titled "The use of multiple measurements in taxonomic problems". This dataset can be accessed on the UCI Machhine Learning Repository [1].
+The Iris flower data set (also known as Fisher's Iris data set) is a well known multivariate data set. It was introduced by Ronald Fisher (a British statistician and geneticist)in 1936, in his paper titled "The use of multiple measurements in taxonomic problems". This dataset can be accessed on the UCI Machhine Learning Repository [1]. It should be noted that Dr Edgar Anderson actually collected the data at the Gaspé Peninsula in Canada [12].
 
-The data set consists of 3 classes of 50 samples each (i.e. 150 samples in total), where each class refers to each of the three species of Irish (Iris setosa, Iris virginica and Iris versicolor). Four attributes were measured from each of the 150 samples: (i) the sepal length in cm; (ii) the sepal width in cm; (iii) the petal length in cm; and (iv) the petal width in cm.
+The data set consists of 3 classes of 50 samples each (i.e. 150 samples in total), where each class refers to each of the three species of Irish (Iris setosa, Iris virginica and Iris versicolor). Four attributes were measured from each of the 150 samples: (i) the sepal length in cm; (ii) the sepal width in cm; (iii) the petal length in cm; and (iv) the petal width in cm. 
 
 The Iris Flower Data Set is widely used as a test case for machine learning. New types of sorting models and taxonomy algorithms often use the Iris flower data set as an input, to examine how various technologies sort and handle data sets [2].
 
 ![fig1](https://miro.medium.com/max/362/1*XN85Vu-SmkJc3TkwgTx5Kw.jpeg)
 
-The Iris Flower Data Set is widely used as a test case for machine learning. 
-
-This program inputs the Iris flower data set and outputs a histrogram for each of the four variables (saved as png files) and a scatter plots of each pair of variables (i.e. sepal width v sepal length, and petal width v petal length).
+This program inputs the Iris flower data set and outputs a histrogram for each of the four variables (saved as png files) and a scatter plot of each pair of variables.
 
 ## Prerequisites
 
@@ -42,19 +39,14 @@ Before you continue, make sure that you have met the following requirements:
 1. Download ZIP package and unzip it. The unzipped folder should include the analysis.py python program and the iris.csv data set.
 2. On a new command line, navigate to the directory containing the (now unzipped) downloaded folder.
 3. Run the "analysis program" by simply typing "python" followed by the file name, i.e. python analysis.py
-4. When the program has run you will see an overview of the data set, showing the three species of Iris included in the data set, the first ten rows of the sample, giving the user a taste of the data which we will be looking at, and a summery of each variable.
+4. When the program has run you will see an overview of the data set, showing the three species of Iris included in the data set, the first ten rows of the sample (giving the user a taste of the data which we will be looking at), and a summery of each variable.
 
 ![Fig1](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig1.JPG?raw=true)
 
 5. Running the program will also create the following files:
-
--> Summary of the data set saved as "Iris-data.csv"
-
--> Four histograms saved as: "petal_length.png", "petal_width.png", "sepal_length.png" and "sepal_width.png"
-
-and
-
--> "Pairplot.png" showing a matrix of the relationships between each variable. 
+(i) Summary of the data set saved as "Iris-data.csv";
+(ii) Four histograms saved as: "petal_length.png", "petal_width.png", "sepal_length.png" and "sepal_width.png"; and,
+(iii) "Pairplot.png" showing a matrix of the relationships between each variable. 
 
 ![Fig2](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig2.JPG)
 
@@ -79,6 +71,7 @@ and
 ![Fig4](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig4.JPG)
 
 
+* While there is some overlap between Iris versicolor and virginica, the Iris setosa is different from the other two species.
 
 # REFERENCES
 1. http://archive.ics.uci.edu/ml/datasets/iris
@@ -92,3 +85,4 @@ and
 9. https://medium.com/@avulurivenkatasaireddy/exploratory-data-analysis-of-iris-data-set-using-python-823e54110d2d
 10. https://github.com/adobe-type-tools/python-scripts/blob/master/README.md
 11. https://stackoverflow.com/questions/10189356/how-to-add-screenshot-to-readmes-in-github-repository
+12. https://towardsdatascience.com/the-iris-dataset-a-little-bit-of-history-and-biology-fb4812f5a7b5

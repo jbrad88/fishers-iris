@@ -15,25 +15,28 @@ df = pd.read_csv('iris.csv')
 # Loads data from the CSV file 'iris.csv' into pandas dataframe [4].
 col=['sepal_length','sepal_width','petal_length','petal_width','species']
 
+# This below prints text for illustrative purposes to tell the user what the program is doing.
 print(" ")
 print("This program provides an analysis of the well-known Fisher's Iris data set.")
 print(" ")
 print("There are three species of Iris included in this data set, as follows:")
 print(df.groupby('species').size())
+# prints the number of samples for each of the three species.
 print(" ")
 print("The first ten rows of the sample gives an overview of the variables:")
 print(" ")
 print(df.head(n=11))
+# prints the headings and the first 10 rows.
 print(" ")
 print("Below is a summary of each variable:") 
 print(" ")
-print(df.describe())
+summary = df.describe()
+# defining the df.describe() function as "summary". This function provides a a summary of the data set incl. count, mean, standard deviation, min and max values.
+print(summary)
 print(" ")
 
-summary = df.describe()
-
+# Next, we want to create and opens a CSV file titled Iris-data [5] [6].
 file1 = open(r"Iris-data.csv", 'a')
-# Creates and opens a CSV file titled Iris-data [5] [6].
 
 summary.to_csv(r'Iris-data.csv')
 # Saves summary to a CSV file[7]
@@ -41,12 +44,13 @@ summary.to_csv(r'Iris-data.csv')
 print("A text file of this data has now been saved in the program folder as a CSV file titled iris.csv.")
 print(" ")
 
-# Divide the data set into the three species [8]:
+# Next we want to divide the data set into the three species [8]:
 iris_setosa=df.loc[df["species"]=="Iris-setosa"]
 iris_virginica=df.loc[df["species"]=="Iris-virginica"]
 iris_versicolor=df.loc[df["species"]=="Iris-versicolor"]
 
-# This next part of the program will save a histrogram as a PNG for each of the four variables [9].
+# This next part of the program will save a histrogram as a PNG for each of the four variables [9]. We need to make sure to close the file after each .png file is saved. This
+# is done using plt.clf after each.
 sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"petal_length").add_legend()
 plt.savefig("petal_length.png")
 plt.clf()
@@ -63,7 +67,7 @@ sns.FacetGrid(df,hue="species",height=3).map(sns.distplot,"sepal_width").add_leg
 plt.savefig("sepal_width.png")
 plt.clf()
 
-# This final part of the program produces a matrix of relationships between each pair of variables [9].
+# This final part of the program produces a matrix of relationships between each pair of variables using the Seaborn "pairplot" function [9].
 sns.set_style("whitegrid")
 sns.pairplot(df,hue="species",height=3)
 plt.savefig("pairplot.png")
