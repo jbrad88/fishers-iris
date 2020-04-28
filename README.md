@@ -34,6 +34,7 @@ Before you continue, make sure that you have met the following requirements:
 - pandas - Python Data Analysis Library
 - NumPy
 - Matplotlib: Python plotting 
+- Seaborn: statistical data visualization
 
 ## General Usage Information
 1. Download ZIP package and unzip it. The unzipped folder should include the analysis.py python program and the iris.csv data set.
@@ -63,15 +64,14 @@ Before you continue, make sure that you have met the following requirements:
 * The Iris Setosa species is easily identified from the other two species by its petal length.
 * All three species overlap in their sepal length and sepal width attributes.
 
-## Scatter Plots
+### Scatter Plots
 * Scatter plots show the relationship between two data sets, i.e. their correlation.
 * Running the analysis.py program creates a file "pairplot.png" which shows a matrix of the relationships between each variable.
 * There is a strong correlation between petal length and petal width.
+* While there is some overlap between Iris versicolor and virginica, the Iris setosa is different from the other two species.
 
 ![Fig4](https://github.com/jbrad88/fishers-iris/blob/master/Screenshots%20and%20images/Fig4.JPG)
 
-
-* While there is some overlap between Iris versicolor and virginica, the Iris setosa is different from the other two species.
 
 # REFERENCES
 1. http://archive.ics.uci.edu/ml/datasets/iris
